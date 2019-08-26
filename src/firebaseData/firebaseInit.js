@@ -1,13 +1,13 @@
 import firebase from 'firebase';
 
     const firebaseApp = firebase.initializeApp({
-        apiKey: "AIzaSyA7ctYRP7x6WBe_PwZCUnYYe2ahkL7b6l4",
-        authDomain: "nomorecommunity-2cfdd.firebaseapp.com",
-        databaseURL: "https://nomorecommunity-2cfdd.firebaseio.com",
-        projectId: "nomorecommunity-2cfdd",
-        storageBucket: "nomorecommunity-2cfdd.appspot.com",
-        messagingSenderId: "108376578479",
-        appId: "1:108376578479:web:da6682d105a33503"
+        apiKey: "AIzaSyD16pTTJj8CIVYnuSRa3DZDL3yR6drxXpk",
+        authDomain: "nm-reload.firebaseapp.com",
+        databaseURL: "https://nm-reload.firebaseio.com",
+        projectId: "nm-reload",
+        storageBucket: "nm-reload.appspot.com",
+        messagingSenderId: "184490861446",
+        appId: "1:184490861446:web:0657e18ed57abf74"
     });
 const db = firebaseApp.firestore();
    

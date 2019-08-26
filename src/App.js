@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import TemplateLogin from './Templates/TemplateLogin'
+import TemplateRegister from './Templates/TemplateRegister'
+import TemplateProfile from './Templates/TemplateProfile'
+import TemplateWall from './Templates/TemplateWall'
+import TemplateSos from './Templates/TemplateSos'
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   
+<BrowserRouter>
+       <Switch>
+         <Route exact path="/" component={TemplateLogin}></Route>
+         <Route exact path="/register" component={TemplateRegister}></Route>
+         <Route exact path="/profile" component={TemplateProfile}></Route>
+         <Route exact path="/wall" component={TemplateWall}></Route>
+         <Route exact path="/sos" component={TemplateSos}></Route>
+       </Switch>
+      
+     </BrowserRouter>
+     </>
   );
 }
 
 export default App;
+
+ 

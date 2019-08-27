@@ -10,19 +10,21 @@ const TemplateRegister = () => {
   const [password, setPassword] = useState('') //React hooks with function components
 
   /*Events button send data to firebase*/
-  function registerButton(event) {
+  const registerButton =(event)=>{
     event.preventDefault();
 
     db.collection("users").add({
       // debo arreglar esta linea
-      // setAlias,
-      // setEmail,
-      // setPassword
+      alias,
+      email,
+      password
     }).then(() => {
       alert("funciona")
     })
-      .catch(() => {
+      .catch((error) => {
         alert("no funciona")
+        console.log(error.message)
+        
       })
   }
 
